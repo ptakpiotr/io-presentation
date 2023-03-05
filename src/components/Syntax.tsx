@@ -4,8 +4,9 @@ import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 type Props = {
   code: string;
+  lang: string;
 };
-function Syntax({ code }: Props) {
+function Syntax({ code, lang }: Props) {
   return (
     <div
       onClick={() => {
@@ -15,7 +16,7 @@ function Syntax({ code }: Props) {
       }}
     >
       <SyntaxHighlighter
-        language="javascript"
+        language={lang}
         style={atomOneDark}
         wrapLongLines={true}
         showLineNumbers={true}

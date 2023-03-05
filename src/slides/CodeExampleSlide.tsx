@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Syntax from "../components/Syntax";
 
-function CodeExampleSlide() {
+interface IProps {
+  image: JSX.Element;
+  code: string;
+  lang: string;
+}
+
+function CodeExampleSlide({ image, code, lang }: IProps) {
   return (
     <section>
-      <Syntax code={"TEST"} />
+      <section>
+        <h6>Diagram</h6>
+        {image}
+      </section>
+      <section>
+        <h6>Przykład</h6>
+        <Syntax code={code} lang={lang} />
+      </section>
     </section>
   );
 }

@@ -10,10 +10,31 @@ const slidesInfo: ISlideInfo[] = [
     slideName: "Agenda",
   },
   {
-    slideName: "Slide 3",
+    slideName: "UML - informacje ogólne",
   },
   {
-    slideName: "Slide 4",
+    slideName: "Czym jest UML?",
+  },
+  {
+    slideName: "Pierwszy przykład",
+  },
+  {
+    slideName: "Dlaczego używać UML?",
+  },
+  {
+    slideName: "Rodzaje diagramów UML",
+  },
+  {
+    slideName: "Diagram klas",
+  },
+  {
+    slideName: "Omówienie klasy",
+  },
+  {
+    slideName: "Modyfikatory dostępu",
+  },
+  {
+    slideName: "Atrybuty",
   },
 ];
 
