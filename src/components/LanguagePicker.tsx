@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Select from "react-select";
-import { Context } from "../appContext";
+import { Context } from "../AppContext";
 
 function LanguagePicker() {
   const { supportedLanguages, setLanguage } = useContext(Context);

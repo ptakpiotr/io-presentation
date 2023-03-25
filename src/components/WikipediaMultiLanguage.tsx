@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Context } from "../appContext";
+import { Context } from "../AppContext";
 import LanguagePicker from "./LanguagePicker";
 import wiki from "wikipedia";
 
