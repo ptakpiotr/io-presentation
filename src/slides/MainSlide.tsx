@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 function MainSlide() {
   return (
     <section>
-      <h2>Diagramy UML</h2>
+      <h2>Diagramy klas</h2>
       <h6>Inżynieria oprogramowania</h6>
       <div className={styles.authorInfo}>
         <h6>Piotr Ptak</h6>

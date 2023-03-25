@@ -1,10 +1,5 @@
 import React from "react";
-
-interface IProps {
-  title: string;
-  content: JSX.Element;
-  additional?: JSX.Element;
-}
+import { IInstanceLevelRelationshipsSlidesProps as IProps } from "../../Types";
 
 function StandardSlide({ title, content, additional }: IProps) {
   return (

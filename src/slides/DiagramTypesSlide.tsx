@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles/DiagramTypesSlide.module.css";
+
 function DiagramTypesSlide() {
   return (
     <section>

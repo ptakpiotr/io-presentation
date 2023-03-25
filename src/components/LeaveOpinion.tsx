@@ -21,10 +21,6 @@ export default function LeaveOpinion({
     `Your opinion should be between ${minLength} and ${maxLength} characters long`
   );
 
-  useEffect(() => {
-    console.log(text);
-  }, [text]);
-
   return (
     <div>
       <textarea

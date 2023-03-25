@@ -13,3 +13,17 @@ export interface IProsOrCon {
   desc: string;
   isPro:boolean;
 }
+
+export interface ISite {
+  src : string;
+}
+
+export interface IInstanceLevelRelationshipsSlidesProps {
+  title: string;
+  content: React.ReactNode;
+  additional?: React.ReactNode;
+}
+
+export type StandardSlideProps = IInstanceLevelRelationshipsSlidesProps & {
+  id: string;
+};

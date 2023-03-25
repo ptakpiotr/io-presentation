@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Syntax from "../components/Syntax";
 
-interface IProps {
-  image: JSX.Element;
+export interface IProps {
+  image?: string;
   code: string;
   lang: string;
 }
@@ -10,10 +10,14 @@ interface IProps {
 function CodeExampleSlide({ image, code, lang }: IProps) {
   return (
     <section>
-      <section>
-        <h6>Diagram</h6>
-        {image}
-      </section>
+      {image ? (
+        <section>
+          <h6>Diagram</h6>
+          <img src={image} alt="Diagram" />
+        </section>
+      ) : (
+        <></>
+      )}
       <section>
         <h6>Przykład</h6>
         <Syntax code={code} lang={lang} />

@@ -2,45 +2,9 @@ import React, { useState } from "react";
 import ReactModal from "react-modal";
 import { IProsOrCon } from "../../Types";
 import { AiFillCloseSquare } from "react-icons/ai";
+import { umlProsAndCons } from "../../values";
 import Enumerable from "linq";
 
-const umlProsAndCons: IProsOrCon[] = [
-  {
-    proCon: "Uniwersalność",
-    desc: "UML jest językiem, który może być wykorzystany w wielu przypadkach (nie tylko dziedzina informatyki)",
-    isPro: true,
-  },
-  {
-    proCon: "Prostota",
-    desc: "Język UML jest łatwy do nauczenia i umożliwia przedstawianie koncepcji nie tylko osobom o umiejętnościach technicznych",
-    isPro: true,
-  },
-  {
-    proCon: "Niezależność od implementacji",
-    desc: "Stosowanie UML nie narzuca w żaden sposób języka programowania, który mamy używać",
-    isPro: true,
-  },
-  {
-    proCon: "Dokumentacja",
-    desc: "Zastosowanie UML + dobre nazewnictwo może w skuteczny sposób ułatwić dokumentowanie funkcjonalności",
-    isPro: true,
-  },
-  {
-    proCon: "Nadmierna złożność",
-    desc: "UML może być bardzo skomplikowany, a ilość powiązań znaczna",
-    isPro: false,
-  },
-  {
-    proCon: "Uogólnienie",
-    desc: "O wielu konceptach łatwo można mówić w języku modelowania a rzeczywista implementacja może być dużo trudniejsza",
-    isPro: false,
-  },
-  {
-    proCon: "Nadmierne użycie",
-    desc: "",
-    isPro: false,
-  },
-];
 
 ReactModal.setAppElement("#root");
 function WhyUseUMLSlide() {
